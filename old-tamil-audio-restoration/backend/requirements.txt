@@ -1,0 +1,26 @@
+# Required
+fastapi==0.161.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.10.1
+python-multipart==0.0.32
+aiofiles==25.1.0
+httpx==0.28.1
+
+# Audio processing (core)
+numpy==2.5.4
+scipy==1.18.1
+soundfile==0.14.0
+librosa==1.0.0
+noisereduce==3.0.3
+
+# Optional AI denoising & source separation
+torch>=2.0.0
+torchaudio>=2.0.0
+demucs>=4.0.0
+
+# Optional — LUFS measurement (more accurate than RMS-based fallback)
+# pyloudnorm==0.1.1
+
+# Utilities
+python-dotenv==1.2.4

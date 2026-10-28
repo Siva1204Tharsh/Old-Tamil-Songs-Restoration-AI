@@ -1,0 +1,51 @@
+# Old Tamil Songs Restoration AI — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.so
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment files
+.env
+!.env.example
+
+# Storage (never commit uploaded audio)
+storage/uploads/
+storage/processed/
+storage/temporary/
+logs/
+
+# Model cache (large files)
+models/cache/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# Streamlit
+.streamlit/secrets.toml
